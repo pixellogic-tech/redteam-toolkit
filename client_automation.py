@@ -1,0 +1,1 @@
+# Placeholder client automation script
