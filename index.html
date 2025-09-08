@@ -1,49 +1,86 @@
-**index.html**
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pixel Logic – Red Team Toolkit</title>
-<meta name="description" content="Pixel Logic's Red Team Toolkit – professional automation for SOC validation and adversary emulation.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Logic – Red Team Toolkit</title>
+  <meta name="description" content="Pixel Logic's Red Team Toolkit – professional automation for SOC validation and adversary emulation.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<h1>Pixel Logic</h1>
-<p>Red Team Automation & SOC Validation</p>
-<a href="https://github.com/pixellogic-tech/redteam-toolkit" class="btn">View on GitHub</a>
-</header>
+  <!-- Navigation / Header -->
+  <header>
+    <div class="container">
+      <h1>Pixel Logic</h1>
+      <p>Red Team Automation & SOC Validation</p>
+      <a href="https://github.com/pixellogic-tech/redteam-toolkit" class="btn">View on GitHub</a>
+    </div>
+  </header>
 
+  <!-- Features Section -->
+  <section id="features" class="section-light">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Authentication</h3>
+          <p>Secure login and role management for all users.</p>
+        </div>
+        <div class="card">
+          <h3>Attack Modules</h3>
+          <p>Automate red team scenarios and SOC testing.</p>
+        </div>
+        <div class="card">
+          <h3>Reporting</h3>
+          <p>Generate professional, detailed reports of simulations.</p>
+        </div>
+        <div class="card">
+          <h3>FastAPI Backend</h3>
+          <p>High-performance Python API to run tasks efficiently.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="features">
-<h2>Features</h2>
-<ul>
-<li>🔐 Authentication & Role Management</li>
-<li>🛠 Attack Automation Modules</li>
-<li>📊 Professional Reporting</li>
-<li>⚡ FastAPI High-Performance Backend</li>
-</ul>
-</section>
+  <!-- Demo / Interactive Simulation -->
+  <section id="demo">
+    <div class="container">
+      <h2>Interactive Demo</h2>
+      <p>Try a simple simulation to see how the toolkit works:</p>
+      
+      <div class="demo-box">
+        <p id="demo-status">Status: Idle</p>
+        <button onclick="runDemo()" class="btn">Run Demo Simulation</button>
+      </div>
+    </div>
+  </section>
 
+  <!-- Call to Action -->
+  <section id="cta" class="section-light">
+    <div class="container">
+      <h2>Get Started</h2>
+      <p>Deploy professional-grade adversary simulations and validate your SOC today.</p>
+      <a href="https://github.com/pixellogic-tech/redteam-toolkit" class="btn">Download Now</a>
+    </div>
+  </section>
 
-<section id="demo">
-<h2>Demo</h2>
-<p>See the toolkit in action with our demo workflows.</p>
-<img src="docs/screenshot.png" alt="Toolkit demo screenshot">
-</section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Pixel Logic. Built with ❤️ for the security community.</p>
+    </div>
+  </footer>
 
-
-<section id="cta">
-<h2>Get Started</h2>
-<p>Deploy professional-grade adversary simulations and validate your SOC today.</p>
-<a href="https://github.com/pixellogic-tech/redteam-toolkit" class="btn">Download Now</a>
-</section>
-
-
-<footer>
-<p>© 2025 Pixel Logic. Built with ❤️ for the security community.</p>
-</footer>
+  <!-- Demo Script -->
+  <script>
+    function runDemo() {
+      const status = document.getElementById('demo-status');
+      status.textContent = 'Status: Running Simulation...';
+      setTimeout(() => {
+        status.textContent = 'Status: Simulation Complete ✅';
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
