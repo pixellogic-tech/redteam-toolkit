@@ -1,30 +1,28 @@
-# ![Pixel Logic Logo](assets/logo.png) Pixel Logic Red Team Toolkit
+# Red Team Toolkit
 
-Professional red team backend and automation framework with secure JWT authentication, attack management, runs, and reporting.
 
-## Features
+**Pixel Logic – Red Team Automation & SOC Validation**
 
-- JWT-based authentication with secure password hashing
-- Create, list, and manage attacks
-- Run attacks and generate reports
-- Automated Python client
-- Modular, scalable, production-ready
+
+🚀 A professional red team automation toolkit designed to streamline SOC validation, attack simulations, and adversary emulation.
+
+
+## ✨ Features
+- 🔐 Authentication & Role Management
+- 🛠 Attack Modules
+- 📊 Reporting
+- ⚡ FastAPI Backend
+- 📦 Extensible Design
+
+## 🚀 Quick Start
+```bash
+git clone https://github.com/pixellogic-tech/redteam-toolkit.git
+cd redteam-toolkit
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
 
 ## Support Me
-
 Support Pixel Logic and help fund development:  
 [![Support Me]https://buy.stripe.com/8x2fZhbN67Gze7deqZeUU04 
 ## Installation
-
-1. Clone the repo
-2. Install dependencies with `pip install -r requirements.txt`
-3. Start the backend with `./start.sh`
-
-## Usage
-
-Use `client_automation.py` or the API endpoints:
-- /auth/register
-- /auth/login
-- /attacks/
-- /runs/
-- /reports/
